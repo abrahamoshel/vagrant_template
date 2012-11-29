@@ -1,0 +1,63 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.2.0)
+    ohai (1.1.2)
+    openssl (1.0.0)
+    runit (0.16.0)
+
+GIT
+  remote: http://github.com/opscode-cookbooks/apt
+  ref: master
+  sha: 9391d9a9840541078bdae2c23413c67fca66388e
+  specs:
+    apt (1.5.1)
+
+GIT
+  remote: http://github.com/opscode-cookbooks/nginx
+  ref: master
+  sha: b3175aca968a6be4133140e62d99ec31df65023c
+  specs:
+    nginx (1.1.0)
+      build-essential (>= 0.0.0)
+      ohai (>= 1.1.0)
+
+GIT
+  remote: https://github.com/findsyou/cookbooks
+  ref: master
+  sha: 5d3eef2093c73bc4a412a62b35dada3aa4f21b47
+  specs:
+    postgresql (0.11.1)
+
+GIT
+  remote: https://github.com/fnichol/chef-git.git
+  ref: master
+  sha: 6c19cbefcdad5ec0f62a64dae1f656d660698ea3
+  specs:
+    git (0.9.0)
+      runit (>= 0.0.0)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm
+  ref: master
+  sha: d6cdb2ab93c421ca6234cbaf5548c914eba4084f
+  specs:
+    rvm (0.9.1)
+
+GIT
+  remote: https://github.com/fnichol/mysql-cookbook
+  ref: master
+  sha: 92a1d344bc9d80f33b5065a0f1fd4539c103a051
+  specs:
+    mysql (1.3.0)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  git (>= 0)
+  mysql (>= 0)
+  nginx (>= 0)
+  postgresql (>= 0)
+  rvm (>= 0)
+

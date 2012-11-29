@@ -1,0 +1,5 @@
+cookbooks
+tmp
+Vagrantfile.pkg
+.DS_Store
+package.box
